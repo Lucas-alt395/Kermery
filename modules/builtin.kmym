@@ -1,0 +1,10 @@
+{
+    "details": {
+        "name": "Standard Built-in Kermery Library (SBK library)",
+        "description": "Basic VGA and CPU controls for Kerno and Kermery"
+    },
+    "functions": {
+        "setupscr()": "mov ax, 0x0003 \n int 0x10",
+        "printtoscr(char)": "mov ah, 0x0E \n mov al, [val] \n int 0x10"
+    }
+}
